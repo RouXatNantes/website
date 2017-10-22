@@ -1,0 +1,14 @@
+<div class='outil'>
+	<div class='titreAccueil police1 font-color3'>{{titre}}</div>
+	<div class='colonnes'>
+		<div *ngFor="let monGroupe of mesOutils" class='groupeLogiciel'>
+			<div class='nomGroupe font-color1'>{{monGroupe.type}}</div>
+			<div *ngFor="let monProduit of monGroupe.produits" class='logiciel'>
+				<div class='nomProduit'>{{monProduit.libelle}}</div>
+				<div class='noteProduit'>
+					<div *ngFor="let i of [1, 2, 3]" [ngClass]="{'etoile': true, 'etoilePleine': monProduit.note>=i, 'etoileVide': monProduit.note<i, 'bgcolor-site': true}"></div>
+			</div>
+			<div class='retourLigne'></div>
+		</div>
+	</div>
+</div>

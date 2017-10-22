@@ -1,0 +1,43 @@
+.outil{
+  margin: 20px;
+}
+.titreAccueil{
+  font-size: 32px;
+  margin-top: 40px;
+}
+.groupeLogiciel{
+}
+.nomGroupe{
+  font-size: 18px;
+  margin-top: 12px;
+}
+.colonnes{
+    -webkit-column-count:2; /* Opera, Safari, Google Chrome */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2; /* Internet Explorer */
+}
+.nomProduit{
+  float: left;
+  margin-left: 25px;
+  width: 250px;
+}
+.noteProduit{
+}
+.retourLigne{
+  clear: both;
+}
+.etoile{
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: block;
+   float: left;
+   height: 20px;
+   margin: 1px 3px;
+   width: 20px;
+}
+.etoilePleine{
+   background-image: url('assets/img/global/etoilePleine.png');
+}
+.etoileVide{
+   background-image: url('assets/img/global/etoileVide.png');
+}

@@ -1,0 +1,18 @@
+.centrePage{
+  margin: auto;
+  width: 1024px;
+}
+.page{
+  background-color: white;
+  border-left: 1px solid #353535;
+  border-right: 1px solid #353535;
+  display: inline-block;
+  /*min-height: 100%;*/
+  width: 100%;
+}
+.title{
+  color: #38A5C9;
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+}

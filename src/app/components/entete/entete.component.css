@@ -1,0 +1,190 @@
+.entete{
+  border-bottom-width: 8px; 
+  border-bottom-style: solid;
+  height: 170px;
+  margin-bottom: 15px;
+}
+.infosgeneraleEntete{
+  float: left;
+  padding: 10px;
+}
+.menuEntete{
+  float: right;
+}
+.titreEntete{
+  font-size: 48px;
+  margin-bottom: 57px;
+}
+.intituleEntete{
+  font-size: 32px;
+  letter-spacing: 3.4px;
+}
+.disponibleEntete{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+.iconFontMenu{
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  float:left;
+  font-size: 18px;
+  height: 23px;
+  padding-top: 120px;
+  margin: 25px 30px;
+  text-align: center;
+  width: 114px;
+}
+.iconFontMenu:hover{
+  text-decoration: none;
+}
+.iconFontMenuMaison{
+  content: '';
+  background-image: url("assets/img/menu/maison.png"), url("assets/img/menu/menu.png");
+}
+.iconFontMenuMaison:hover{
+  background-image: url("assets/img/menu/maisonOver.png"), url("assets/img/menu/menuOver.png");
+}
+.iconFontMenuMaisonSelect{
+  background-image: url("assets/img/menu/maison.png"), url("assets/img/menu/menuSelect.png");
+  color: white;
+  cursor:default;
+}
+.iconFontMenuMaisonLoad:before{
+  content: url("assets/img/menu/maisonOver.png") url("assets/img/menu/menuOver.png");
+  display: none;
+  position: absolute;
+}
+.iconFontMenuProjet{
+  background-image: url("assets/img/menu/projet.png"), url("assets/img/menu/menu.png");
+}
+.iconFontMenuProjet:hover{
+  background-image: url("assets/img/menu/projetOver.png"), url("assets/img/menu/menuOver.png");
+}
+.iconFontMenuProjetSelect{
+  background-image: url("assets/img/menu/projet.png"), url("assets/img/menu/menuSelect.png");
+  color: white;
+  cursor:default;
+}
+.iconFontMenuProjetLoad:before{
+  content: url("assets/img/menu/projetOver.png") url("assets/img/menu/menuOver.png");
+  display: none;
+  position: absolute;
+}
+.iconFontMenuCV{
+  background-image: url("assets/img/menu/cv.png"), url("assets/img/menu/menu.png");
+}
+.iconFontMenuCV:hover{
+  background-image: url("assets/img/menu/cvOver.png"), url("assets/img/menu/menuOver.png");
+}
+.iconFontMenuCVSelect{
+  background-image: url("assets/img/menu/cv.png"), url("assets/img/menu/menuSelect.png");
+  color: white;
+  cursor:default;
+}
+.iconFontMenuCVLoad:before{
+  content: url("assets/img/menu/cvOver.png") url("assets/img/menu/menuOver.png");
+  display: none;
+  position: absolute;
+}
+.monEnteteMini{
+  background-color:red;
+  width:100%;
+}
+.marginMini{
+  margin-top: 200px;
+}
+.enteteMini{
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  height: 38px;
+  margin-bottom: 15px;
+  position: fixed;
+  top: 0;
+  width: 1024px;
+}
+.menuEnteteMini{
+  float: right;
+  margin-right: 25px;
+}
+.infosgeneraleEnteteMini{
+  float: left;
+  padding: 10px;
+}
+.intituleEnteteMini{
+  font-size: 24px;
+  letter-spacing: 3.4px;
+  float: left;
+}
+.disponibleEnteteMini{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+}
+.iconFontMenuMini{
+  background-position: 0px 2px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  float:left;
+  font-size: 24px;
+  height: 100%;
+  margin: 0px 10px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.iconFontMenuMini:hover{
+  text-decoration: none;
+}
+.iconFontMenuMiniMaison{
+  content: '';
+  background-image: url("assets/img/menu/maison.png");
+}
+.iconFontMenuMiniMaison:hover{
+  background-image: url("assets/img/menu/maisonOver.png");
+}
+.iconFontMenuMiniMaisonSelect{
+  background-image: url("assets/img/menu/maison.png");
+  color: white;
+  cursor:default;
+  text-decoration: underline;
+}
+.iconFontMenuMiniMaisonSelect:hover{
+  text-decoration: underline;
+}
+.iconFontMenuMiniProjet{
+  background-image: url("assets/img/menu/projet.png");
+}
+.iconFontMenuMiniProjet:hover{
+  background-image: url("assets/img/menu/projetOver.png");
+}
+.iconFontMenuMiniProjetSelect{
+  background-image: url("assets/img/menu/projet.png");
+  color: white;
+  cursor:default;
+  text-decoration: underline;
+}
+.iconFontMenuMiniProjetSelect:hover{
+  text-decoration: underline;
+}
+.iconFontMenuMiniCV{
+  background-image: url("assets/img/menu/cv.png");
+}
+.iconFontMenuMiniCV:hover{
+  background-image: url("assets/img/menu/cvOver.png");
+}
+.iconFontMenuMiniCVSelect{
+  background-image: url("assets/img/menu/cv.png");
+  color: white;
+  cursor:default;
+  text-decoration: underline;
+}
+.iconFontMenuMiniCVSelect:hover{
+  text-decoration: underline;
+}
+.reseaux{
+  float: left;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 20px;
+}

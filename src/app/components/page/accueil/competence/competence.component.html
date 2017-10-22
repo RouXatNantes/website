@@ -1,0 +1,12 @@
+<div class='competence'>
+	<div class='titreAccueil police1 font-color3'>{{titre}}</div>
+	<div class='table'>
+		<div class='row'>
+			<div class='cell bgcolor-site bandeau'></div>
+			<div class='cell'>
+				<div *ngFor="let maCompetence of mesCompetences" class="competenceItem"><div class='puce bgcolor-site3'></div>{{maCompetence.libelle}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+

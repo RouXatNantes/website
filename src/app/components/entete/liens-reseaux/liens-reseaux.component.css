@@ -1,0 +1,31 @@
+.lienPiedDePage{
+  display: block;
+  height: 54px;
+  margin: 10px;
+  width: 54px;
+}
+.linkedinPiedDePage{
+  background-image: url(assets/img/pieddepage/linkedin.png);
+}
+.linkedinPiedDePage:before{
+  content: url('assets/img/pieddepage/linkedinOver.png');
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+.linkedinPiedDePage:hover{
+  background-image: url(assets/img/pieddepage/linkedinOver.png);
+}
+.viadeoPiedDePage{
+  background-image: url(assets/img/pieddepage/viadeo.png);
+}
+.viadeoPiedDePage:before{
+  content: url('assets/img/pieddepage/viadeoOver.png');
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+.viadeoPiedDePage:hover{
+  background-image: url(assets/img/pieddepage/viadeoOver.png);
+}
+

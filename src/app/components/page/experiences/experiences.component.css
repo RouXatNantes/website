@@ -1,0 +1,60 @@
+.projets{
+  margin: 40px;
+}
+.titreProjets{
+  font-size: 32px;
+  text-align: center;
+}
+.uneExperience{
+  display: block;
+  float: left;
+  margin: 40px 0px;
+  width: 100%;
+}
+.leftItemExp{
+  float: left;
+  width:260px;
+}
+.item{
+  font-weight: bold;
+  padding-top: 20px;
+  width: 200px;
+}
+.enteteExp{
+  display:block;
+  float: left;
+  width: 100%;
+}
+.annee{
+  font-weight: bold;
+  font-size: 18px;
+}
+.employeur{
+  font-style: italic;
+}
+.client{
+  float: left;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.titreCategorie{
+  font-weight: bold;
+  margin: 10px 0px 5px 0px;
+}
+.pliable{
+  cursor: pointer;
+  font-size: 32px;
+  float: right;
+  text-align:center;
+  width: 20px;
+}
+.developperLabel{
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-style: italic;
+  padding-right: 0px;
+  text-align: center;
+  width: 150px;
+}

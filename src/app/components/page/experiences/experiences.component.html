@@ -1,0 +1,43 @@
+<div class='projets'>
+	<div class='titreProjets police1 font-color3'>{{titre}}</div>
+	<a class='developperLabel font-color3' (click)='expandAll()'>{{this.expandLabel}}</a>
+	<div *ngFor="let monExp of mesExperiences" class='uneExperience'>
+		<div class='enteteExp borderbottom-site3'>
+			<div class='leftItemExp'>
+				<div class='annee font-color3'>{{monExp.dateStart}} à {{monExp.dateEnd}}</div>
+				<div class='employeur font-color1'>Employeur : {{monExp.employeur}}</div>
+			</div>
+			<div class='client font-color1'>{{monExp.client}}</div>
+			<div class='pliable police1 font-color1' title="Développer l'expérience" (click)="monExp.enabled = !monExp.enabled" [innerHtml]="monExp.enabled == true ? '-' : '+'"></div>
+		</div>
+		<div *ngIf="!monExp.enabled" class='table'>
+			<div class='row'>
+				<div class='cell item font-color1'>Fonction</div>
+				<div class='cell font-color3'>{{monExp.fonction}}</div>
+			</div>
+		</div>
+		<div *ngIf="monExp.enabled" class='table'>
+			<div class='row'>
+				<div class='cell item font-color1'>Fonction</div>
+				<div class='cell font-color3'>{{monExp.fonction}}</div>
+			</div>
+			<div class='row'>
+				<div class='cell item font-color1'>Projet</div>
+				<div class='cell font-color3'>{{monExp.projet}}</div>
+			</div>
+                        <div class='row'>
+                                <div class='cell item font-color1'>Missions et réalisations</div>
+                                <div class='cell font-color3'>
+					<div *ngFor="let maCat of monExp.categorie">
+						<div class='titreCategorie'>{{maCat.libelle}}</div>
+						<div *ngFor="let detail of maCat.detail"><div class='puce bgcolor-site3'></div>{{detail}}</div>
+					</div>
+				</div>
+                        </div>
+			<div class='row'>
+				<div class='cell item font-color1'>Environnement</div>
+				<div class='cell font-color3'>{{monExp.environnement}}</div>
+			</div>
+		</div>
+	</div>
+</div>

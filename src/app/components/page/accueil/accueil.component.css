@@ -1,0 +1,28 @@
+DIV#presentation{
+  width: 100%;
+}
+DIV#presentationEntete{
+  margin: 25px 100px;
+}
+DIV#photo{
+  background-image: url("assets/img/accueil/photo.png");
+  background-size: 100% 100%;
+  float:left;
+  margin-right: 75px;
+  height: 175px;
+  width: 175px;
+}
+DIV#titre{
+  font-size: 32px;
+  width: 100%;
+}
+DIV#experience{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -8px;
+}
+DIV#msgPresentation{
+  font-style: italic;
+  margin-top: 15px;
+  text-align: justify;
+}

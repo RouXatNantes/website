@@ -1,0 +1,70 @@
+<div class='pieddepage'>
+	<div class='pieddepageImage'></div>
+	<div class='pieddepageBandeau bgcolor-site border-color'>
+		<a class='infoPiedDePage font-color2 emailPiedDePage' (click)='formulaireContact=true' >{{contactMe}}</a>
+		<div class='infoPiedDePage font-color2 telephonePiedDePage'>{{telephone}}</div>
+		<div class='infoPiedDePage font-color2 adressePiedDePage'>
+			<div>{{getLigne1()}}</div>
+			<div>{{getLigne2()}}</div>
+		</div>
+		<div class='infoPiedDePage font-color2 hobbiesPiedDePage'></div>
+	</div>
+	<div *ngIf='formulaireContact' id='popupContact' class='fondPopup bgPopup1 border-color'>
+		<div [ngClass]="retourMail.rc != -1 ? 'formulaireContact formulaireContactRetour bgcolor-site2' : 'formulaireContact formulaireContactForm bgcolor-site2'">
+			<div class='formulaire-titre police1 font-color3 bgcolor-site'>
+				<div class='table'>
+					<div class='row'>
+						<div class='cell font-color3 closepopup hidden'></div>
+						<div class='cell'>{{contactMe}}</div>
+						<div class='cell font-color3 closepopup' (click)='closePopup();'>&times;</div>
+					</div>
+				</div>
+			</div>
+			<form *ngIf="retourMail.rc == -1" (ngSubmit)="onSubmit()" class='formulaire' accept-charset='UTF-8'>
+				<div class='table formulaireTable'>
+					<div class='row'>
+						<div class='cell equal2'>
+							<div [ngClass]="!nom.valid && nom.touched ? 'champsFormulaire border-colorError' : 'champsFormulaire border-color'">
+								<label for="nom" [ngClass]="!nom.valid && nom.touched ? 'bgcolor-site2 police1 font-colorError' : 'bgcolor-site2 police1 font-color3'">Nom et prénom</label>
+								<input class='bgcolor-site2 font-color3' type="text" name="nom" maxlength="80" placeholder="" [formControl]="nom">
+								<span [ngClass]="!nom.valid && nom.touched ? 'bgcolor-siteError font-color2' : 'bgcolor-site3 font-color2'">Entrez votre nom et votre prénom</span>
+							</div>
+						</div>
+						<div class='cell equal2'>
+							<div [ngClass]="!email.valid && email.touched ? 'champsFormulaire border-colorError' : 'champsFormulaire border-color'">
+								<label for="email" [ngClass]="!email.valid && email.touched ? 'bgcolor-site2 police1 font-colorError' : 'bgcolor-site2 police1 font-color3'">Email</label>
+								<input class='bgcolor-site2 font-color3' type="text" name="email" maxlength="80" placeholder="" [formControl]="email">
+								<span [ngClass]="!email.valid && email.touched ? 'bgcolor-siteError font-color2' : 'bgcolor-site3 font-color2'">Entrez votre email</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div [ngClass]="!message.valid  && message.touched ? 'champsFormulaire border-colorError' : 'champsFormulaire border-color'">
+					<label for="message" [ngClass]="!message.valid && message.touched ? 'bgcolor-site2 police1 font-colorError' : 'bgcolor-site2 police1 font-color3'">Message</label>
+					<textarea class='bgcolor-site2 font-color3' name="message" maxlength="5000" placeholder="" [formControl]="message"></textarea>
+					<span [ngClass]="!message.valid && message.touched ? 'bgcolor-siteError font-color2' : 'bgcolor-site3 font-color2'">Entrez votre message</span>
+				</div>
+				<div class='centerSubmit'>
+					<input [hidden]="!contactFormulaire.valid" class='inputSubmit champsFormulaireSubmit bgcolor-site police1 border-color font-color2' type='submit' name='submit' value='Envoyer' />
+				</div>
+			</form>
+			<div *ngIf="retourMail.rc != -1" class='formulaire'>
+				<div *ngIf="retourMail.rc == 0" class='retourPopup'>
+					<div class='titreRetourPopup font-color1'>{{retourMail.nom}}</div>
+					<div *ngFor="let item of msgMailOk">{{item.ligne}}</div>
+					<div class='centerSubmit'>
+						<input class='inputSubmit champsFormulaireSubmit bgcolor-site police1 border-color font-color2' type='button' name='endPopup' (click)='closePopup();' value='OK' />
+					</div>
+				</div>
+                                <div *ngIf="retourMail.rc > 0" class='retourPopup'>
+                                        <div class='titreRetourPopup font-color1'>Erreur :</div>
+					<div>Code : {{retourMail.erreur.code}}</div>
+					<div>Message : {{retourMail.erreur.message}}</div>
+					<div class='centerSubmit'>
+						<input class='inputSubmit champsFormulaireSubmit bgcolor-site police1 border-color font-color2' type='button' name='endPopup' (click)='closePopup();' value='OK' />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

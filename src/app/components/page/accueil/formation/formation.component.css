@@ -1,0 +1,40 @@
+.formation{
+  margin: 20px;
+}
+.titreAccueil{
+  font-size: 32px;
+  margin-top: 60px;
+}
+.enteteFormation{
+  margin-top: 10px;
+  width: 100%;
+}
+.infoFormation{
+  margin-left: 15px;
+  margin-top: 5px;
+  width: 100%;
+}
+.formationItem{
+  padding-left: 15px;
+}
+.anneeFormation{
+  display: block;
+  font-weight: bold;
+  float:left;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.intituleFormation{
+  font-size: 18px;
+}
+.descriptionFormation{
+  display: block;
+  float:left;
+  margin-right: 8px;
+}
+.complementFormation{
+  font-style: italic;
+}
+.bandeau{
+  width: 5px;
+}

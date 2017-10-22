@@ -1,0 +1,162 @@
+.pieddepage{
+  bottom: 0px;
+  display: block;
+  float:left;
+  width: 1024px;
+}
+.pieddepageImage{
+  background-image: url(assets/img/pieddepage/nantesOmbre.png);
+  display: block;
+  height: 175px;
+}
+.pieddepageBandeau{
+  border-top-width: 8px;
+  border-top-style: solid;
+  display: table;
+  height: 110px;
+  padding-top: 10px;
+  width: 100%;
+}
+.infoPiedDePage{
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  display: table-cell;
+  height: 100%;
+  padding-top: 25px;
+  text-align: center;
+  vertical-align: middle;
+  width: 25%;
+}
+.emailPiedDePage{
+  background-image: url(assets/img/pieddepage/email.png);
+  cursor: pointer;
+  position: relative;
+}
+.emailPiedDePage:before{
+  content: url(assets/img/pieddepage/emailOver.png);
+  position:absolute;
+  visibility: hidden;
+}
+.emailPiedDePage:hover{
+  background-image: url(assets/img/pieddepage/emailOver.png);
+}
+.telephonePiedDePage{
+  background-image: url(assets/img/pieddepage/telephone.png);
+}
+.adressePiedDePage{
+  background-image: url(assets/img/pieddepage/maison.png);
+}
+.hobbiesPiedDePage{
+  background-image: url(assets/img/pieddepage/hobbies.png);
+  background-position-y: 5px;
+}
+.fondPopup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+}
+.formulaireContact{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  bottom: 0px;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  width: 800px;
+}
+.formulaireContactForm{
+  height: 495px;
+}
+.formulaireContactRetour{
+  height: 250px;
+}
+.formulaire {
+  display: block;
+}
+.formulaire-titre{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-align: center;
+}
+.formulaireTable {
+  text-align: center;
+  width: 100%;
+}
+.champsFormulaire {
+  border-style: solid;
+  border-radius: 3px;
+  border-width:1px;
+  padding: 9px;
+  margin: 50px 30px 0px 30px;
+  text-align: left;
+}
+.champsFormulaire > label {
+  display: block;
+  float: left;
+  font-size: 18px;
+  height: 18px;
+  margin-top: -20px;
+  padding: 2px 5px 2px 5px;
+  overflow: hidden;
+}
+.champsFormulaire > textarea,
+.champsFormulaire > input[type="text"],
+.champsFormulaire > input[type="email"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.champsFormulaire > textarea{
+  height: 200px;
+  font-size: 14px;
+  resize: none;
+  text-align: left;
+}
+.champsFormulaire > span {
+  display: block;
+  padding: 1px;
+  margin: 0 -9px -9px -9px;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}
+.champsFormulaireSubmit {
+  font-size: 24px;
+  padding: 8px 50px 3px 50px;
+  outline: none;
+}
+.centerSubmit{
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+.retourPopup{
+  font-size: 24px;
+  text-align: center;
+  padding-top :25px;
+}
+.titreRetourPopup{
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}

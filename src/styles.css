@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: FHA;
+  src: url('assets/fonts/FHAModernizedIdealClassicNCAccent.eot');
+  src: url('assets/fonts/FHAModernizedIdealClassicNCAccent.eot#iefix') format('embedded-opentype'),
+       url('assets/fonts/FHAModernizedIdealClassicNCAccent.otf') format('opentype');
+  }
+
+HTML{
+  background-color:#dddfdf;
+  height: 100%;
+} 
+BODY{
+  height: 100%;
+  margin: 0px;
+  width: 100%;
+}
+A{
+  outline: 0;
+  text-decoration: none;
+}
+A:hover{
+  color: #353535;
+  text-decoration: underline;
+}
+
+.police1{
+  font-family: FHA;
+}
+.font-color1{
+  color: #80a559;
+}
+.font-color2{
+  color: white;
+}
+.font-color3{
+  color: #353535;
+}
+.font-colorError{
+  color: #b32828;
+}
+.bgcolor-site{
+  background-color: #80a559;
+/*  background-color: #c86737; */
+}
+.bgcolor-site2{
+  background-color: white;
+}
+.bgcolor-site3{
+  background-color: #353535;
+}
+.bgcolor-siteError{
+  background-color: #b32828;
+}
+.bgPopup1{
+  background: rgba(0, 0, 0, 0.7);
+}
+.border-color{
+  border-color: #353535;
+}
+.border-colorError{
+  border-color: #b32828;
+}
+.borderbottom-site3{
+  border-bottom: 1px solid #353535;
+}
+.table{
+  display: table;
+  width: 100%;
+}
+.row{
+  display: table-row;
+}
+.cell{
+  display: table-cell;
+}
+.puce{
+  background-image: url('assets/img/global/puce.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  float: left;
+  height: 12px;
+  margin: 3px 6px 0px 6px;
+  width: 12px;
+}
+.loading{
+  font-size: 48px;
+  margin-top: 100px;
+  text-align: center;
+}
+.closepopup {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 2px;
+  width: 32px;
+}
+.closepopup:hover {
+  border: 2px solid #353535;
+  border-radius: 10px;
+  padding: 0px;
+  text-decoration: none;
+}
+.equal2{
+  width: 50%;
+}
+.inputSubmit {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.inputSubmit:hover {
+  color: #353535;
+}
+.hidden{
+  visibility: hidden;
+}
