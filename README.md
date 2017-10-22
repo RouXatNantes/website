@@ -1,7 +1,13 @@
-<<<<<<< HEAD
 # Website
 
+My personnal Website available at https://nicolasray.fr
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.31.
+
+## v1.1.0
+Initial version of the website
+
+# Information
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -26,10 +32,4 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# website
-My personnal Website available at https://nicolasray.fr
 
-#v1.1.0
-Initial version of the website
->>>>>>> 37a7c10d5511f08891e42cede9f27ee57aee174f
