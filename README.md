@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.31.
@@ -25,3 +26,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# website
+My personnal Website available at https://nicolasray.fr
+
+#v1.1.0
+Initial version of the website
+>>>>>>> 37a7c10d5511f08891e42cede9f27ee57aee174f
