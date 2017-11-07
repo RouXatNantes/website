@@ -14,7 +14,7 @@
   text-align: center;
 }
 .lienCv{
-  background-image: url('assets/img/cv/pdfIcon.png');
+  background-image: url('/assets/img/cv/pdfIcon.png');
   background-repeat: no-repeat;
   background-position: top center;
   display:block;
@@ -25,10 +25,10 @@
   text-align: center;
 }
 .lienCv:before{
-  content: url('assets/img/cv/pdfIconGrey.png');
+  content: url('/assets/img/cv/pdfIconGrey.png');
   display: none;
   position: absolute;
 }
 .lienCv:hover{
-  background-image: url('assets/img/cv/pdfIconGrey.png');
+  background-image: url('/assets/img/cv/pdfIconGrey.png');
 }

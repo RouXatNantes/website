@@ -54,7 +54,7 @@ export class PieddepageComponent implements OnInit {
   }
   recuperationInfoMail(mail: Mail) {
     this.retourMail = mail;
-    if(this.retourMail.rc == 0) {
+    if (this.retourMail.rc === 0) {
       this.contactFormulaire.reset();
     }
   }

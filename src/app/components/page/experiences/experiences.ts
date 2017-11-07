@@ -1,4 +1,5 @@
-import { experiencesCategories } from './experiences.categories';
+import { Component, OnInit } from '@angular/core';
+import { ExperiencesCategories } from './experiences.categories';
 
 export class Experiences implements OnInit {
   dateStart: string;
@@ -6,8 +7,9 @@ export class Experiences implements OnInit {
   employeur: string;
   client: string;
   fonction: string;
+  website: string;
   projet: string;
-  categorie: experiencesCategories;
+  categorie: ExperiencesCategories;
   environnement: string;
   enabled: boolean;
 

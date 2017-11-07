@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Observable } from 'rxjs/Observable';
+
 import { formationProperties } from '../../../../../properties/formation';
 import { Formation } from './formation';
 import { FormationService } from '../../../../services/formation/formation.service';
@@ -12,12 +14,12 @@ import { FormationService } from '../../../../services/formation/formation.servi
 })
 export class FormationComponent implements OnInit {
   titre = formationProperties.titre;
-  mesFormations: Formation[];
+  mesFormations: Observable<Formation[]>;
 
   constructor(private formationService: FormationService) { }
 
   getFormations(): void {
-    this.formationService.getFormations().then(formation => this.mesFormations = formation);
+    this.mesFormations = this.formationService.getFormations();
   }
   ngOnInit() {
     this.getFormations();

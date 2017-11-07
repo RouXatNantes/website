@@ -1,7 +1,5 @@
-/* tslint:disable:no-unused-variable */
-
-import { TestBed, async, inject } from '@angular/core/testing';
-import { competenceService } from './competence.service';
+import { TestBed, inject } from '@angular/core/testing';
+import { CompetenceService } from './competence.service';
 
 describe('CompetenceService', () => {
   beforeEach(() => {
@@ -10,7 +8,7 @@ describe('CompetenceService', () => {
     });
   });
 
-  it('should ...', inject([CompetenceService], (service: CompetenceService) => {
+  it('should be created', inject([CompetenceService], (service: CompetenceService) => {
     expect(service).toBeTruthy();
   }));
 });

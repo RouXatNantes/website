@@ -40,50 +40,50 @@
 }
 .iconFontMenuMaison{
   content: '';
-  background-image: url("assets/img/menu/maison.png"), url("assets/img/menu/menu.png");
+  background-image: url("/assets/img/menu/maison.png"), url("/assets/img/menu/menu.png");
 }
 .iconFontMenuMaison:hover{
-  background-image: url("assets/img/menu/maisonOver.png"), url("assets/img/menu/menuOver.png");
+  background-image: url("/assets/img/menu/maisonOver.png"), url("/assets/img/menu/menuOver.png");
 }
 .iconFontMenuMaisonSelect{
-  background-image: url("assets/img/menu/maison.png"), url("assets/img/menu/menuSelect.png");
+  background-image: url("/assets/img/menu/maison.png"), url("/assets/img/menu/menuSelect.png");
   color: white;
   cursor:default;
 }
 .iconFontMenuMaisonLoad:before{
-  content: url("assets/img/menu/maisonOver.png") url("assets/img/menu/menuOver.png");
+  content: url("/assets/img/menu/maisonOver.png") url("/assets/img/menu/menuOver.png");
   display: none;
   position: absolute;
 }
 .iconFontMenuProjet{
-  background-image: url("assets/img/menu/projet.png"), url("assets/img/menu/menu.png");
+  background-image: url("/assets/img/menu/projet.png"), url("/assets/img/menu/menu.png");
 }
 .iconFontMenuProjet:hover{
-  background-image: url("assets/img/menu/projetOver.png"), url("assets/img/menu/menuOver.png");
+  background-image: url("/assets/img/menu/projetOver.png"), url("/assets/img/menu/menuOver.png");
 }
 .iconFontMenuProjetSelect{
-  background-image: url("assets/img/menu/projet.png"), url("assets/img/menu/menuSelect.png");
+  background-image: url("/assets/img/menu/projet.png"), url("/assets/img/menu/menuSelect.png");
   color: white;
   cursor:default;
 }
 .iconFontMenuProjetLoad:before{
-  content: url("assets/img/menu/projetOver.png") url("assets/img/menu/menuOver.png");
+  content: url("/assets/img/menu/projetOver.png") url("/assets/img/menu/menuOver.png");
   display: none;
   position: absolute;
 }
 .iconFontMenuCV{
-  background-image: url("assets/img/menu/cv.png"), url("assets/img/menu/menu.png");
+  background-image: url("/assets/img/menu/cv.png"), url("/assets/img/menu/menu.png");
 }
 .iconFontMenuCV:hover{
-  background-image: url("assets/img/menu/cvOver.png"), url("assets/img/menu/menuOver.png");
+  background-image: url("/assets/img/menu/cvOver.png"), url("/assets/img/menu/menuOver.png");
 }
 .iconFontMenuCVSelect{
-  background-image: url("assets/img/menu/cv.png"), url("assets/img/menu/menuSelect.png");
+  background-image: url("/assets/img/menu/cv.png"), url("/assets/img/menu/menuSelect.png");
   color: white;
   cursor:default;
 }
 .iconFontMenuCVLoad:before{
-  content: url("assets/img/menu/cvOver.png") url("assets/img/menu/menuOver.png");
+  content: url("/assets/img/menu/cvOver.png") url("/assets/img/menu/menuOver.png");
   display: none;
   position: absolute;
 }
@@ -138,13 +138,13 @@
 }
 .iconFontMenuMiniMaison{
   content: '';
-  background-image: url("assets/img/menu/maison.png");
+  background-image: url("/assets/img/menu/maison.png");
 }
 .iconFontMenuMiniMaison:hover{
-  background-image: url("assets/img/menu/maisonOver.png");
+  background-image: url("/assets/img/menu/maisonOver.png");
 }
 .iconFontMenuMiniMaisonSelect{
-  background-image: url("assets/img/menu/maison.png");
+  background-image: url("/assets/img/menu/maison.png");
   color: white;
   cursor:default;
   text-decoration: underline;
@@ -153,13 +153,13 @@
   text-decoration: underline;
 }
 .iconFontMenuMiniProjet{
-  background-image: url("assets/img/menu/projet.png");
+  background-image: url("/assets/img/menu/projet.png");
 }
 .iconFontMenuMiniProjet:hover{
-  background-image: url("assets/img/menu/projetOver.png");
+  background-image: url("/assets/img/menu/projetOver.png");
 }
 .iconFontMenuMiniProjetSelect{
-  background-image: url("assets/img/menu/projet.png");
+  background-image: url("/assets/img/menu/projet.png");
   color: white;
   cursor:default;
   text-decoration: underline;
@@ -168,13 +168,13 @@
   text-decoration: underline;
 }
 .iconFontMenuMiniCV{
-  background-image: url("assets/img/menu/cv.png");
+  background-image: url("/assets/img/menu/cv.png");
 }
 .iconFontMenuMiniCV:hover{
-  background-image: url("assets/img/menu/cvOver.png");
+  background-image: url("/assets/img/menu/cvOver.png");
 }
 .iconFontMenuMiniCVSelect{
-  background-image: url("assets/img/menu/cv.png");
+  background-image: url("/assets/img/menu/cv.png");
   color: white;
   cursor:default;
   text-decoration: underline;

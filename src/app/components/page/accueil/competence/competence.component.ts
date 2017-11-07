@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Observable } from 'rxjs/Observable';
+
 import { competenceProperties } from '../../../../../properties/competence';
 import { Competence } from './competence';
 import { CompetenceService } from '../../../../services/competence/competence.service';
@@ -12,12 +14,12 @@ import { CompetenceService } from '../../../../services/competence/competence.se
 })
 export class CompetenceComponent implements OnInit {
   public titre = competenceProperties.titre;
-  public mesCompetences: Competence[];
+  public mesCompetences: Observable<Competence[]>;
 
   constructor(private competenceService: CompetenceService) { }
 
   getCompetences(): void {
-    this.competenceService.getCompetences().then(competence => this.mesCompetences = competence);
+    this.mesCompetences = this.competenceService.getCompetences();
   }
   ngOnInit() {
     this.getCompetences();

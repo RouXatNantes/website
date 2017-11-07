@@ -1,7 +1,21 @@
 <div class='projets'>
 	<div class='titreProjets police1 font-color3'>{{titre}}</div>
 	<a class='developperLabel font-color3' (click)='expandAll()'>{{this.expandLabel}}</a>
-	<div *ngFor="let monExp of mesExperiences" class='uneExperience'>
+	<div id='timeline' class='timeline' [@visibilityChanged]="timelineIsVisible">
+		<div class='dateMinMaxTimeline'>{{ this.getLastEndDate() }}</div>
+		<div class='timelineContent'>
+			<div class='timelineContentDisplay'>
+				<div id='pourcentageTimeline' [ngStyle]="{'height': this.getpourcentageTimeline()}" ></div>
+				<div class='positionTimeline'>
+					<div class='idTimeline'>{{ this.numberEnCours }}/{{ this.getNumberOfExperiences() }}</div>
+				</div>
+			</div>
+			<div class='timelineBorderContent border-color1'></div>
+		</div>
+		<div class='dateMinMaxTimeline'>{{ this.getLastStartDate() }}</div>
+	</div>
+	<div *ngFor="let monExp of mesExperiences; let index = index"  [ngClass]="timelineIsHidden() || (index + 1) != this.numberEnCours ? 'uneExperience' : 'uneExperience bgcolor-site-alpha'">
+		<div class='masked'>{{ index }}</div>
 		<div class='enteteExp borderbottom-site3'>
 			<div class='leftItemExp'>
 				<div class='annee font-color3'>{{monExp.dateStart}} à {{monExp.dateEnd}}</div>
@@ -24,6 +38,10 @@
 			<div class='row'>
 				<div class='cell item font-color1'>Projet</div>
 				<div class='cell font-color3'>{{monExp.projet}}</div>
+			</div>
+			<div *ngIf="monExp.website" class='row'>
+				<div class='cell item font-color1'>Site internet</div>
+				<div class='cell font-color3'><a class='font-color1' target="_blank" href='{{monExp.website}}'>{{monExp.website}}</a></div>
 			</div>
                         <div class='row'>
                                 <div class='cell item font-color1'>Missions et réalisations</div>

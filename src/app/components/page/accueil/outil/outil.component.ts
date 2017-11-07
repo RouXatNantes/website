@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Observable } from 'rxjs/Observable';
+
 import { outilProperties } from '../../../../../properties/outil';
 import { OutilGroupe } from './outilGroupe';
 import { OutilService } from '../../../../services/outil/outil.service';
@@ -12,12 +14,12 @@ import { OutilService } from '../../../../services/outil/outil.service';
 })
 export class OutilComponent implements OnInit {
   titre = outilProperties.titre;
-  mesOutils: OutilGroupe[];
+  mesOutils: Observable<OutilGroupe[]>;
 
   constructor(private outilService: OutilService) { }
 
   getOutils(): void {
-    this.outilService.getOutils().then(outils => this.mesOutils = outils);
+    this.mesOutils = this.outilService.getOutils();
   }
   ngOnInit() {
     this.getOutils();

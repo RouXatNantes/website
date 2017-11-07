@@ -17,7 +17,9 @@ export class AccueilComponent implements OnInit {
   constructor(private router: Router) { }
 
   getExperience(): string {
-    return Math.floor(( new Date().valueOf() - new Date('2008-10-01').valueOf() ) / (60 * 60 * 24 * 365.25 * 1000)) + ' ' + this.experience_label;
+    return Math.floor(
+      ( new Date().valueOf() - new Date('2008-10-01').valueOf() )
+      / (60 * 60 * 24 * 365.25 * 1000)) + ' ' + this.experience_label;
   }
   ngOnInit() {
   }

@@ -4,7 +4,7 @@
 		<div class='row'>
 			<div class='cell bgcolor-site bandeau'></div>
 			<div class='cell'>
-				<div *ngFor="let maFormation of mesFormations" class='formationItem'>
+				<div *ngFor="let maFormation of mesFormations | async" class='formationItem'>
 					<div class='enteteFormation'>
 					<div class='anneeFormation font-color3'>{{maFormation.annee}}</div>
 					<div class='intituleFormation font-color1'>{{maFormation.intitule}}</div>

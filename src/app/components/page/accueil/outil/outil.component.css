@@ -36,8 +36,8 @@
    width: 20px;
 }
 .etoilePleine{
-   background-image: url('assets/img/global/etoilePleine.png');
+   background-image: url('/assets/img/global/etoilePleine.png');
 }
 .etoileVide{
-   background-image: url('assets/img/global/etoileVide.png');
+   background-image: url('/assets/img/global/etoileVide.png');
 }

@@ -1,7 +1,7 @@
 <div class='outil'>
 	<div class='titreAccueil police1 font-color3'>{{titre}}</div>
 	<div class='colonnes'>
-		<div *ngFor="let monGroupe of mesOutils" class='groupeLogiciel'>
+		<div *ngFor="let monGroupe of mesOutils | async" class='groupeLogiciel'>
 			<div class='nomGroupe font-color1'>{{monGroupe.type}}</div>
 			<div *ngFor="let monProduit of monGroupe.produits" class='logiciel'>
 				<div class='nomProduit'>{{monProduit.libelle}}</div>

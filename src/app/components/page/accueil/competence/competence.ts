@@ -1,4 +1,4 @@
 export class Competence {
-  id: integer;
+  id: number;
   libelle: string;
 }
