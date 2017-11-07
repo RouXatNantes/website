@@ -1,10 +1,14 @@
 require('es6-shim');
 
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Menu } from '../../components/entete/menu/menu';
 
-import 'rxjs/add/operator/toPromise';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/throw';
+
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class MenuService {
@@ -13,23 +17,15 @@ export class MenuService {
 
   private menus: Menu[] = [];
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getMenus(): Promise<Menu[]> {
-
-    const parser = new DOMParser();
-    return this.http.get(this.menusUrl)
-      .toPromise()
-      .then(response => this.convertXmlToMenuJson(response.json().data))
-      .catch(this.handleError);
+  getMenus(): Observable<Menu[]> {
+    return  this.http.get<Menu[]>(this.menusUrl)
+        .catch(this.handleError);
+  }
+  private handleError (error: any) {
+    console.error(error);
+    return Observable.throw(error);
   }
 
-  private handleError(error: any): Promise<any> {
-    console.error('error parsing menu' , error);
-    return Promise.reject(error.message || error);
-  }
-  private convertXmlToMenuJson(st: any): Menu[] {
-    const jsObj = JSON.parse(st);
-    return jsObj.root.menu as Menu[];
-  }
 }

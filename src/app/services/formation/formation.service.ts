@@ -1,10 +1,14 @@
 require('es6-shim');
 
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Formation } from '../../components/page/accueil/formation/formation';
 
-import 'rxjs/add/operator/toPromise';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/throw';
+
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class FormationService {
@@ -13,23 +17,14 @@ export class FormationService {
 
   private formations: Formation[] = [];
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getFormations(): Promise<Formation[]> {
-
-    const parser = new DOMParser();
-    return this.http.get(this.formationUrl)
-      .toPromise()
-      .then(response => this.convertXmlToFormationJson(response.json().data))
-      .catch(this.handleError);
+  getFormations(): Observable<Formation[]> {
+    return  this.http.get<Formation[]>(this.formationUrl)
+        .catch(this.handleError);
   }
-
-  private handleError(error: any): Promise<any> {
-    console.error('error parsing formations' , error);
-    return Promise.reject(error.message || error);
-  }
-  private convertXmlToFormationJson(st: any): Formation[] {
-    const jsObj = JSON.parse(st);
-    return jsObj.root.formation as Formation[];
+  private handleError (error: any) {
+    console.error(error);
+    return Observable.throw(error);
   }
 }

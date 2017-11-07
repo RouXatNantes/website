@@ -1,10 +1,14 @@
 require('es6-shim');
 
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
-import { Experiences } from '../../components/page/experiences/experiences';
+import { HttpClient } from '@angular/common/http';
 
-import 'rxjs/add/operator/toPromise';
+import { Experiences } from '../../components/page/experiences/experiences';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/throw';
+
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class ExperienceService {
@@ -13,23 +17,14 @@ export class ExperienceService {
 
   private experiences: Experiences[] = [];
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getExperiences(): Promise<Experiences[]> {
-
-    const parser = new DOMParser();
-    return this.http.get(this.experienceUrl)
-      .toPromise()
-      .then(response => this.convertXmlToExperienceJson(response.json().data))
-      .catch(this.handleError);
+  getExperiences(): Observable<Experiences[]> {
+    return  this.http.get<Experiences[]>(this.experienceUrl)
+        .catch(this.handleError);
   }
-
-  private handleError(error: any): Promise<any> {
-    console.error('error parsing experiences' , error);
-    return Promise.reject(error.message || error);
-  }
-  private convertXmlToExperienceJson(st: any): Experiences[] {
-    const jsObj = JSON.parse(st);
-    return jsObj.root.experience as Experiences[];
+  private handleError (error: any) {
+    console.error(error);
+    return Observable.throw(error);
   }
 }

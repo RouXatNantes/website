@@ -5,7 +5,7 @@ DIV#presentationEntete{
   margin: 25px 100px;
 }
 DIV#photo{
-  background-image: url("assets/img/accueil/photo.png");
+  background-image: url("/assets/img/accueil/photo.png");
   background-size: 100% 100%;
   float:left;
   margin-right: 75px;

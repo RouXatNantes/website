@@ -1,6 +1,6 @@
 export class Formation {
-      id: integer;
-      annee: integer;
+      id: number;
+      annee: number;
       intitule: string;
       desciption: string;
       complement: string;

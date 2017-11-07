@@ -1,6 +1,4 @@
-/* tslint:disable:no-unused-variable */
-
-import { TestBed, async, inject } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 import { MenuService } from './menu.service';
 
 describe('MenuService', () => {
@@ -10,7 +8,7 @@ describe('MenuService', () => {
     });
   });
 
-  it('should ...', inject([MenuService], (service: MenuService) => {
+  it('should be created', inject([MenuService], (service: MenuService) => {
     expect(service).toBeTruthy();
   }));
 });

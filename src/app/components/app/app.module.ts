@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppRoutingModule, routedComponents } from '../../route/app-routing.module';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, FormControl, Validators, NgForm } from '@angular/forms';
+import { trigger, state, animate, transition, style } from '@angular/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 /*Extention for InMemoryWebApiModule catch http */
 import '../../extentions/rxjs-extensions';
@@ -25,6 +27,7 @@ import { CvComponent } from '../page/cv/cv.component';
 import { CompetenceComponent } from '../page/accueil/competence/competence.component';
 import { OutilComponent } from '../page/accueil/outil/outil.component';
 import { FormationComponent } from '../page/accueil/formation/formation.component';
+import { EventService } from '../../services/event/event.service';
 
 @NgModule({
   declarations: [
@@ -42,13 +45,15 @@ import { FormationComponent } from '../page/accueil/formation/formation.componen
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpModule,
+    HttpClientModule,
     InMemoryWebApiModule.forRoot(DataWebsiteService, { delay: 0, passThruUnknownUrl: true})
   ],
   providers: [
+    EventService,
     DataWebsiteService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],

@@ -1,10 +1,13 @@
-import { Component, HostListener, Inject, Injectable, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, Injectable, OnInit, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DOCUMENT } from '@angular/platform-browser';
+
+import { Observable } from 'rxjs/Observable';
 
 import { entete } from '../../../properties/entete';
 import { Menu } from './menu/menu';
 import { MenuService } from '../../services/menu/menu.service';
+import { EventService } from '../../services/event/event.service';
 
 @Component({
   selector: 'app-entete',
@@ -20,13 +23,18 @@ export class EnteteComponent implements OnInit {
   public disponible= entete.disponible;
   public menuMini= false;
 
-  menu_website: Menu[];
+  menu_website: Observable<Menu[]>;
   selectedMenu: Menu;
 
-  constructor(private route: ActivatedRoute, private router: Router, private menuService: MenuService, @Inject(DOCUMENT) private document: any) { }
+  constructor(private route: ActivatedRoute,
+              private router: Router,
+              private menuService: MenuService,
+              @Inject(DOCUMENT) private document: any,
+              private _eventService: EventService) {
+  }
 
   getMenus(): void {
-    this.menuService.getMenus().then(menu => this.menu_website = menu);
+      this.menu_website = this.menuService.getMenus()
   }
   onSelect(menu: Menu): void {
     this.selectedMenu = menu;
@@ -35,9 +43,14 @@ export class EnteteComponent implements OnInit {
     this.getMenus();
   }
 
+  menuIsMini() {
+    return this.menuMini;
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     this.menuMini = (number > 80);
+    this._eventService.notifyMiniMenu(this.menuMini);
   }
 }

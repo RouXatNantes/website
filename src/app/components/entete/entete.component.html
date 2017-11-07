@@ -1,4 +1,4 @@
-<div *ngFor="let monMenu of menu_website"class='iconFontMenu{{monMenu.image}}Load'></div>
+<div *ngFor="let monMenu of menu_website | async" class='iconFontMenu{{monMenu.image}}Load'></div>
 <div *ngIf="!menuMini" class='entete bgcolor-site border-color'>
 	<div class='infosgeneraleEntete'>
 		<div class='titreEntete police1 font-color2'>{{titre}}</div>
@@ -6,7 +6,7 @@
 		<div class='disponibleEntete font-color2'>{{disponible}}</div>
 	</div>
 	<div class='menuEntete'>
-		<a *ngFor="let monMenu of menu_website" [name]='["Menu"+monMenu.name]' routerLink="/{{monMenu.href}}" routerLinkActive #rla="routerLinkActive" [ngClass]="!rla.isActive ? 'iconFontMenu police1 font-color2 iconFontMenu'+monMenu.image : 'iconFontMenu police1 font-color2'" [routerLinkActive]="['iconFontMenu' + monMenu.image + 'Select']" (click)="onSelect(monMenu)">{{monMenu.name}}</a>
+		<a *ngFor="let monMenu of menu_website | async" [name]='["Menu"+monMenu.name]' routerLink="/{{monMenu.href}}" routerLinkActive #rla="routerLinkActive" [ngClass]="!rla.isActive ? 'iconFontMenu police1 font-color2 iconFontMenu'+monMenu.image : 'iconFontMenu police1 font-color2'" [routerLinkActive]="['iconFontMenu' + monMenu.image + 'Select']" (click)="onSelect(monMenu)">{{monMenu.name}}</a>
 		<div class='reseaux'>
 			<app-liens-reseaux>Loading</app-liens-reseaux>
 		</div>
@@ -20,7 +20,7 @@
 			<!--<div class='disponibleEnteteMini font-color2'>{{disponible}}</div>-->
 	 	</div> 
 		<div class='menuEnteteMini'>
-			<a *ngFor="let monMenu of menu_website" [name]='["Menu"+monMenu.name]' routerLink="/{{monMenu.href}}" routerLinkActive #rla="routerLinkActive" [ngClass]="!rla.isActive ? 'iconFontMenuMini police1 font-color2 iconFontMenuMini'+monMenu.image : 'iconFontMenuMini police1 font-color2'" [routerLinkActive]="['iconFontMenuMini' + monMenu.image + 'Select']" (click)="onSelect(monMenu)">{{monMenu.name}}</a>
+			<a *ngFor="let monMenu of menu_website | async" [name]='["Menu"+monMenu.name]' routerLink="/{{monMenu.href}}" routerLinkActive #rla="routerLinkActive" [ngClass]="!rla.isActive ? 'iconFontMenuMini police1 font-color2 iconFontMenuMini'+monMenu.image : 'iconFontMenuMini police1 font-color2'" [routerLinkActive]="['iconFontMenuMini' + monMenu.image + 'Select']" (click)="onSelect(monMenu)">{{monMenu.name}}</a>
 		</div>
 	</div>
 </div>

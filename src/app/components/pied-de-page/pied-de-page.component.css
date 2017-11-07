@@ -5,7 +5,7 @@
   width: 1024px;
 }
 .pieddepageImage{
-  background-image: url(assets/img/pieddepage/nantesOmbre.png);
+  background-image: url(/assets/img/pieddepage/nantesOmbre.png);
   display: block;
   height: 175px;
 }
@@ -28,26 +28,26 @@
   width: 25%;
 }
 .emailPiedDePage{
-  background-image: url(assets/img/pieddepage/email.png);
+  background-image: url(/assets/img/pieddepage/email.png);
   cursor: pointer;
   position: relative;
 }
 .emailPiedDePage:before{
-  content: url(assets/img/pieddepage/emailOver.png);
+  content: url(/assets/img/pieddepage/emailOver.png);
   position:absolute;
   visibility: hidden;
 }
 .emailPiedDePage:hover{
-  background-image: url(assets/img/pieddepage/emailOver.png);
+  background-image: url(/assets/img/pieddepage/emailOver.png);
 }
 .telephonePiedDePage{
-  background-image: url(assets/img/pieddepage/telephone.png);
+  background-image: url(/assets/img/pieddepage/telephone.png);
 }
 .adressePiedDePage{
-  background-image: url(assets/img/pieddepage/maison.png);
+  background-image: url(/assets/img/pieddepage/maison.png);
 }
 .hobbiesPiedDePage{
-  background-image: url(assets/img/pieddepage/hobbies.png);
+  background-image: url(/assets/img/pieddepage/hobbies.png);
   background-position-y: 5px;
 }
 .fondPopup {

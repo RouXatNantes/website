@@ -44,6 +44,10 @@ A:hover{
   background-color: #80a559;
 /*  background-color: #c86737; */
 }
+.bgcolor-site-alpha{
+  background-color: rgba(128, 165, 89, 0.1);
+/*  background-color: #c86737; */
+}
 .bgcolor-site2{
   background-color: white;
 }
@@ -58,6 +62,9 @@ A:hover{
 }
 .border-color{
   border-color: #353535;
+}
+.border-color1{
+  border-color: #80a559;
 }
 .border-colorError{
   border-color: #b32828;
@@ -116,4 +123,7 @@ A:hover{
 }
 .hidden{
   visibility: hidden;
+}
+.masked{
+  display: none;
 }
