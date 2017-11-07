@@ -2,7 +2,11 @@
 
 My personnal Website available at https://nicolasray.fr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.31.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+
+## v1.2.0
+Migration angular 5
+Add Timeline for experiences
 
 ## v1.1.0
 Initial version of the website
