@@ -4,6 +4,12 @@ My personnal Website available at https://nicolasray.fr
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
+## v1.2.2
+Update data
+
+## v1.2.1
+Add Github link in footer
+
 ## v1.2.0
 Migration angular 5
 Add Timeline for experiences
