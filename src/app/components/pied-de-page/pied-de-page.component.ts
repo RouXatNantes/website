@@ -15,6 +15,8 @@ import { GlobalValidator } from '../../forms/validators/global-validator';
 })
 
 export class PieddepageComponent implements OnInit {
+  public myGithub = contact.myGithub;
+  public myGithubAddress = contact.myGithubAddress;
   public contactMe = contact.contactMe;
   public numero = contact.numero;
   public rue = contact.rue;

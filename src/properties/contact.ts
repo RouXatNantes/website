@@ -2,6 +2,8 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const contact = {
+  myGithub: 'Mon Github',
+  myGithubAddress: 'https://github.com/RouXatNantes',
   contactMe: 'Contactez moi',
   telephone: '+33 6 85 47 56 26',
   numero: '2',

@@ -25,7 +25,7 @@
   padding-top: 25px;
   text-align: center;
   vertical-align: middle;
-  width: 25%;
+  width: 17%;
 }
 .emailPiedDePage{
   background-image: url(/assets/img/pieddepage/email.png);
@@ -40,6 +40,19 @@
 .emailPiedDePage:hover{
   background-image: url(/assets/img/pieddepage/emailOver.png);
 }
+.githubPiedDePage{
+  background-image: url(/assets/img/pieddepage/github.png);
+  cursor: pointer;
+  position: relative;
+}
+.githubPiedDePage:before{
+  content: url(/assets/img/pieddepage/githubOver.png);
+  position:absolute;
+  visibility: hidden;
+}
+.githubPiedDePage:hover{
+  background-image: url(/assets/img/pieddepage/githubOver.png);
+}
 .telephonePiedDePage{
   background-image: url(/assets/img/pieddepage/telephone.png);
 }
@@ -49,6 +62,7 @@
 .hobbiesPiedDePage{
   background-image: url(/assets/img/pieddepage/hobbies.png);
   background-position-y: 5px;
+  width: 32%;
 }
 .fondPopup {
   position: fixed;

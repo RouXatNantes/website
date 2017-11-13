@@ -52,6 +52,10 @@ export class DataOutilService {
       {
         'libelle': 'VBA',
         'note': 2
+      },
+      {
+        'libelle': 'Angular',
+        'note': 1
       }
    ]
   },
@@ -92,6 +96,10 @@ export class DataOutilService {
       {
         'libelle': 'Docker',
         'note': 1
+      },
+      {
+        'libelle': 'Jenkins',
+        'note': 2
       }
     ]
   },

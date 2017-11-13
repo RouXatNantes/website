@@ -3,7 +3,7 @@
 
 export const entete = {
   titre: 'Nicolas Ray',
-  intitule: 'Freelance / Nantes',
+  intitule: 'Indépendant / Nantes',
 //  disponible: 'Disponible à partir du 9 mai 2017'
   disponible: 'Actuellement en mission'
 };

@@ -2,8 +2,54 @@ export class DataExperienceService {
 
   private experience = [
   {
-    'dateStart': '11/2015',
+    'dateStart': '05/2016',
     'dateEnd': 'ce jour',
+    'employeur': 'Indépendant',
+    'client': 'SV.SI, SNCF Voyages.SI',
+    'fonction': 'Coach DevOps',
+    'projet': 'SIS, PMT (Division production ferroviaire)',
+    'categorie': [
+      {
+        'libelle': 'DevOps',
+        'detail': [
+          'Coaching vers les chefs de projet',
+          'Définition des besoins et pilotage des actions'
+        ]
+      },
+      {
+        'libelle': 'Suivi des objectifs',
+        'detail': [
+          'Déploiement sans interruption de service',
+          'Métriques techniques et applicatives et consolidation dans des dashboards de supervision',
+          'Activation de fonctionnalité à la demande',
+          'Automatisation des déploiements',
+          'Automatisation des tests',
+          'Conciliateur entre équipes de développement et d’exploitation'
+         ]
+      },
+      {
+        'libelle': 'Intégration continue',
+        'detail': [
+          'Redéploiement de l’usine logicielle',
+          'Création de script de déploiement multi composant sans interruption de service'
+        ]
+      },
+      {
+        'libelle': 'Expertise technique',
+        'detail': [
+          'Support technique aux différentes équipes',
+          'Suivi de la performance des plateformes et mise en place d’indicateurs',
+        ]
+      }
+    ],
+    'environnement': `Agile, DevOps, Ansible, Ansible Tower, Smashing, Bootstrap, Jquery,
+Jenkins, Sonar, Nexus, Elasticsearch (ELK), Spring boot (Eureka, Spring
+config, Spring admin), Redis, Apache, Filebeat, Metricbeat, MongoDb,
+Docker, Rancher`
+  },
+  {
+    'dateStart': '11/2015',
+    'dateEnd': '05/2016',
     'employeur': 'Atos',
     'client': 'MINISTÈRE DES AFFAIRES ÉTRANGÈRES',
     'fonction': 'Responsable équipe d\'intégration / exploitation',
