@@ -1,14 +1,15 @@
 require('es6-shim');
 
+import {throwError as observableThrowError,  Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Formation } from '../../components/page/accueil/formation/formation';
 
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/throw';
 
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/catch';
+
+
 
 @Injectable()
 export class FormationService {
@@ -20,11 +21,11 @@ export class FormationService {
   constructor(private http: HttpClient) { }
 
   getFormations(): Observable<Formation[]> {
-    return  this.http.get<Formation[]>(this.formationUrl)
-        .catch(this.handleError);
+    return  this.http.get<Formation[]>(this.formationUrl).pipe(
+        catchError(this.handleError));
   }
   private handleError (error: any) {
     console.error(error);
-    return Observable.throw(error);
+    return observableThrowError(error);
   }
 }

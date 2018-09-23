@@ -120,5 +120,5 @@ export class DataOutilService {
 
     mesOutils() {
       return this.outil;
-    };
+    }
 }

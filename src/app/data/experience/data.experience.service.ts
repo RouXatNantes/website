@@ -2,7 +2,7 @@ export class DataExperienceService {
 
   private experience = [
   {
-    'dateStart': '05/2016',
+    'dateStart': '05/2017',
     'dateEnd': 'ce jour',
     'employeur': 'Indépendant',
     'client': 'SV.SI, SNCF Voyages.SI',
@@ -49,7 +49,7 @@ Docker, Rancher`
   },
   {
     'dateStart': '11/2015',
-    'dateEnd': '05/2016',
+    'dateEnd': '05/2017',
     'employeur': 'Atos',
     'client': 'MINISTÈRE DES AFFAIRES ÉTRANGÈRES',
     'fonction': 'Responsable équipe d\'intégration / exploitation',
@@ -243,5 +243,5 @@ Docker, Rancher`
 
     mesExperiences() {
       return this.experience;
-    };
+    }
 }

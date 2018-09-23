@@ -22,5 +22,5 @@ export class DataMenuService {
 
     monMenu() {
       return this.menu;
-    };
+    }
 }

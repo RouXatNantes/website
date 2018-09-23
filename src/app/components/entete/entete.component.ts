@@ -2,7 +2,7 @@ import { Component, HostListener, Inject, Injectable, OnInit, EventEmitter } fro
 import { Router, ActivatedRoute } from '@angular/router';
 import { DOCUMENT } from '@angular/platform-browser';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { entete } from '../../../properties/entete';
 import { Menu } from './menu/menu';
@@ -18,10 +18,10 @@ import { EventService } from '../../services/event/event.service';
 
 @Injectable()
 export class EnteteComponent implements OnInit {
-  public titre= entete.titre;
-  public intitule= entete.intitule;
-  public disponible= entete.disponible;
-  public menuMini= false;
+  public titre = entete.titre;
+  public intitule = entete.intitule;
+  public disponible = entete.disponible;
+  public menuMini = false;
 
   menu_website: Observable<Menu[]>;
   selectedMenu: Menu;
@@ -34,7 +34,7 @@ export class EnteteComponent implements OnInit {
   }
 
   getMenus(): void {
-      this.menu_website = this.menuService.getMenus()
+      this.menu_website = this.menuService.getMenus();
   }
   onSelect(menu: Menu): void {
     this.selectedMenu = menu;

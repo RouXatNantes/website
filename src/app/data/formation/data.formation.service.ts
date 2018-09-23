@@ -26,5 +26,5 @@ export class DataFormationService {
 
   mesFormations() {
     return this.formation;
-  };
+  }
 }

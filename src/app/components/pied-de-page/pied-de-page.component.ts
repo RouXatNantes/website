@@ -67,7 +67,7 @@ export class PieddepageComponent implements OnInit {
   onSubmit() {
     if (this.contactFormulaire.valid) {
       this.mailService.sendMail(this.contactFormulaire.value.nom, this.contactFormulaire.value.email, this.contactFormulaire.value.message)
-      .then(mail => this.recuperationInfoMail(mail));
+      .subscribe(response => this.recuperationInfoMail(response));
     }
   }
 }

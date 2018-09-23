@@ -1,14 +1,16 @@
 require('es6-shim');
 
+import {throwError as observableThrowError,  Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Experiences } from '../../components/page/experiences/experiences';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/throw';
 
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/catch';
+
+
+
 
 @Injectable()
 export class ExperienceService {
@@ -20,11 +22,11 @@ export class ExperienceService {
   constructor(private http: HttpClient) { }
 
   getExperiences(): Observable<Experiences[]> {
-    return  this.http.get<Experiences[]>(this.experienceUrl)
-        .catch(this.handleError);
+    return  this.http.get<Experiences[]>(this.experienceUrl).pipe(
+        catchError(this.handleError));
   }
   private handleError (error: any) {
     console.error(error);
-    return Observable.throw(error);
+    return observableThrowError(error);
   }
 }

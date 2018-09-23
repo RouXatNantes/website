@@ -40,6 +40,6 @@ export class DataCompetenceService {
 
   mesCompetences() {
     return this.competence;
-  };
+  }
 
 }

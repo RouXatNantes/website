@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { outilProperties } from '../../../../../properties/outil';
 import { OutilGroupe } from './outilGroupe';

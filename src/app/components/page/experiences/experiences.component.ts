@@ -1,7 +1,7 @@
 import { Component, HostListener, Inject, Injectable, OnInit, Input } from '@angular/core';
 import { trigger, state, animate, transition, style } from '@angular/animations';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { experiencesProperties } from '../../../../properties/experiences';
 import { Experiences } from './experiences';
@@ -41,7 +41,7 @@ export class ExperiencesComponent implements OnInit {
     this.expandLabel = experiencesProperties.getLabel(this.expand);
     this._eventService.listen().subscribe((isMini: boolean) => {
       this.menuIsMini = isMini;
-    })
+    });
   }
 
   getExperiences(): void {
@@ -88,7 +88,7 @@ export class ExperiencesComponent implements OnInit {
     Array.prototype.forEach.call(xps, function(xp) {
       tooBottom = ((timeline.offsetTop + timeline.offsetHeight) < (xp.offsetTop + xp.offsetHeight - scroll));
       if (xp.offsetTop - scroll < 500) {
-        numberEnCours = xp.firstChild.nextSibling.innerText;
+        numberEnCours = xp.firstChild.innerText;
       }
     });
     this.pourcentageTimeline = ( +numberEnCours / ( this.getNumberOfExperiences() - 1) ) * 100;
