@@ -40,7 +40,7 @@ export class DataExperienceService {
           'Support technique aux différentes équipes',
           'Suivi de la performance des plateformes et mise en place d’indicateurs'
         ]
-      }
+      },
       {
         'libelle': 'Toolbox',
         'detail': [
