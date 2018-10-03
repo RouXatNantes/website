@@ -35,7 +35,7 @@ export class DataCompetenceService {
     },
     {
       'id': 9,
-      'libelle': 'Intégrateur : installation, rédaction de document d\'installation'
+      'libelle': 'Intégrateur : installation, rédaction de documents d\'installation'
     }];
 
   mesCompetences() {

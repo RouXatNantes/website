@@ -60,50 +60,6 @@ export class DataOutilService {
    ]
   },
   {
-    'type': 'Produits',
-    'produits': [
-      {
-        'libelle': 'Oracle (9, 10, 11)',
-        'note': 2
-      },
-      {
-        'libelle': 'Weblogic (8, 9, 10)',
-        'note': 3
-      },
-      {
-        'libelle': 'Apache (2.0, 2.2)',
-        'note': 3
-      },
-      {
-        'libelle': 'Jboss (AS 7, EWP 5.1)',
-        'note': 3
-      },
-      {
-        'libelle': 'MongoDb (2.6)',
-        'note': 1
-      },
-      {
-        'libelle': 'PostgresSQL (9.5)',
-        'note': 2
-      },
-      {
-        'libelle': 'Tomcat (7, 8)',
-        'note': 3},
-      {
-        'libelle': 'Mysql (5.6)',
-        'note': 2
-      },
-      {
-        'libelle': 'Docker',
-        'note': 1
-      },
-      {
-        'libelle': 'Jenkins',
-        'note': 2
-      }
-    ]
-  },
-  {
     'type': 'Bureautique',
     'produits': [
       {
@@ -113,6 +69,74 @@ export class DataOutilService {
       {
         'libelle': 'MS Project',
         'note': 1
+      }
+    ]
+  },
+  {
+    'type': 'Produits',
+    'produits': [
+      {
+        'libelle': 'Docker',
+        'note': 2
+      },
+      {
+        'libelle': 'Kubernetes',
+        'note': 1
+      },
+      {
+        'libelle': 'Eureka',
+        'note': 2
+      },
+      {
+        'libelle': 'Spring Boot',
+        'note': 2
+      },
+      {
+        'libelle': 'Oracle',
+        'note': 2
+      },
+      {
+        'libelle': 'Weblogic',
+        'note': 3
+      },
+      {
+        'libelle': 'Apache',
+        'note': 3
+      },
+      {
+        'libelle': 'Jboss',
+        'note': 3
+      },
+      {
+        'libelle': 'MongoDb',
+        'note': 1
+      },
+      {
+        'libelle': 'PostgresSQL',
+        'note': 2
+      },
+      {
+        'libelle': 'Tomcat',
+        'note': 3},
+      {
+        'libelle': 'Mysql',
+        'note': 2
+      },
+      {
+        'libelle': 'Solr',
+        'note': 1
+      },
+      {
+        'libelle': 'Redis',
+        'note': 1
+      },
+      {
+        'libelle': 'Rancher',
+        'note': 2
+      },
+      {
+        'libelle': 'Jenkins',
+        'note': 2
       }
     ]
   }

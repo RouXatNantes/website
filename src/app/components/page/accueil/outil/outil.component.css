@@ -5,6 +5,9 @@
   font-size: 32px;
   margin-top: 40px;
 }
+.logiciel{
+  margin-bottom: 4px;
+}
 .groupeLogiciel{
   padding-bottom: 8px;
 }
@@ -20,6 +23,7 @@
 .nomProduit{
   float: left;
   margin-left: 25px;
+  padding-top: 3px;
   width: 250px;
 }
 .noteProduit{

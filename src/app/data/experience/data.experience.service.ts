@@ -7,7 +7,7 @@ export class DataExperienceService {
     'employeur': 'Indépendant',
     'client': 'SV.SI, SNCF Voyages.SI',
     'fonction': 'Coach DevOps',
-    'projet': 'SIS, PMT (Division production ferroviaire)',
+    'projet': 'SIS, PMT, CAR, PDO (Division Déléguée Production Ferroviaire)',
     'categorie': [
       {
         'libelle': 'DevOps',
@@ -19,33 +19,42 @@ export class DataExperienceService {
       {
         'libelle': 'Suivi des objectifs',
         'detail': [
-          'Déploiement sans interruption de service',
+          'Conciliateur entre équipes de développement et d’exploitation',
           'Métriques techniques et applicatives et consolidation dans des dashboards de supervision',
-          'Activation de fonctionnalité à la demande',
+          'Déploiement sans interruption de service',
           'Automatisation des déploiements',
-          'Automatisation des tests',
-          'Conciliateur entre équipes de développement et d’exploitation'
+          'Automatisation des tests dans le cadre du déploiement continu'
          ]
       },
       {
         'libelle': 'Intégration continue',
         'detail': [
-          'Redéploiement de l’usine logicielle',
-          'Création de script de déploiement multi composant sans interruption de service'
+          'Adaptation du workflow au sein de l\'usine logiciel',
+          'Mise en place d\'un déploiement continu toutes les nuits',
+          'Mise en place de test de déploiement continu'
         ]
       },
       {
         'libelle': 'Expertise technique',
         'detail': [
           'Support technique aux différentes équipes',
-          'Suivi de la performance des plateformes et mise en place d’indicateurs',
+          'Suivi de la performance des plateformes et mise en place d’indicateurs'
+        ]
+      }
+      {
+        'libelle': 'Toolbox',
+        'detail': [
+          `Conception (recueil du besoin, architecture, développement) d\'une solution pour déployer facilement
+de l\'outillage de supervision dans le cadre du programme FIRST`,
+          'Leader technique auprès de l\'équipe de développement (2 développeurs)',
+          'Choix des plugins et des solutions techniques pour développer et déployer la Toolbox (choix des processus associés)'
         ]
       }
     ],
     'environnement': `Agile, DevOps, Ansible, Ansible Tower, Smashing, Bootstrap, Jquery,
 Jenkins, Sonar, Nexus, Elasticsearch (ELK), Spring boot (Eureka, Spring
 config, Spring admin), Redis, Apache, Filebeat, Metricbeat, MongoDb,
-Docker, Rancher`
+Docker, Rancher, Kubernetes`
   },
   {
     'dateStart': '11/2015',
