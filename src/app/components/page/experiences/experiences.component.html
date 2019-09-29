@@ -54,7 +54,11 @@
                         </div>
 			<div class='row'>
 				<div class='cell item font-color1'>Environnement</div>
-				<div class='cell font-color3'>{{monExp.environnement}}</div>
+                                <div class='cell font-color3'></div>
+                        </div>
+			<div *ngFor="let detailEnv of monExp.environnement" class='row'>
+				<div class='cell subItem font-color1'>{{ detailEnv.label }}</div>
+                               	<div class='cell font-color3'>{{ detailEnv.value }}</div>
 			</div>
 		</div>
 	</div>

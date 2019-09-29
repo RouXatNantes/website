@@ -21,6 +21,13 @@ export class DataFormationService {
     'intitule': 'Formation continue',
     'description': 'Formation Project Leader :  13 jours',
     'complement': '(Société Atos)'
+  },
+  {
+    'id': 4,
+    'annee': 2019,
+    'intitule': 'Formation continue',
+    'description': 'Formation AWS:  3 jours',
+    'complement': ''
   }
 ];
 

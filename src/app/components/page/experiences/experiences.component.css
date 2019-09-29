@@ -20,6 +20,10 @@
   padding-top: 20px;
   width: 200px;
 }
+.subItem{
+  padding-left: 25px;
+  font-style: italic;
+}
 .enteteExp{
   display:block;
   float: left;

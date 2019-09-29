@@ -1,9 +1,9 @@
 export const presentation = {
-  titre: 'Responsable d\'équipe',
+  titre: 'Responsable d\'équipe/Leader technique',
   experience_label: 'ans d\'expérience',
-  texte: `Ayant toujours été passionné par tout ce qui touche au multimédia
-          et aux nouvelles technologies, je cherche aujoud\'hui à donner une
-          nouvelle direction à mon projet professionnel. Je cherche un nouveau
-          challenge en tant que responsable d\'équipe ou chef de projet.`
+  texte: `Passionné par tout ce qui touche le multimédia et les nouvelles
+          technologies, je cherche à travailler au sein d\'une équipe dynamique.
+          Je souhaite pouvoir mettre mon savoir-faire au service de projets
+          informatique innovants et ambitieux.`
 };
 

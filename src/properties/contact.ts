@@ -6,9 +6,9 @@ export const contact = {
   myGithubAddress: 'https://github.com/RouXatNantes',
   contactMe: 'Contactez moi',
   telephone: '+33 6 85 47 56 26',
-  numero: '2',
-  rue: 'rue Lefèvre Utile',
-  codePostal: '44 000',
+  numero: '1',
+  rue: 'avenue de l\'archipel',
+  codePostal: '44 300',
   ville: 'Nantes',
   hobbies: 'hobbies',
   msgMailOk: [{'ligne': 'Merci pour votre message.'}, {'ligne': 'Je vous répondrais dans les plus brefs délais.'}]

@@ -4,6 +4,10 @@ My personnal Website available at https://nicolasray.fr
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
+## v1.4.0
+Migration Angular 8
+Update content (experiences, skills)
+
 ## v1.3.1
 Update content (experiences, skills)
 

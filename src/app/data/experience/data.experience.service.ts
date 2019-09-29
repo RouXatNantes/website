@@ -38,23 +38,49 @@ export class DataExperienceService {
         'libelle': 'Expertise technique',
         'detail': [
           'Support technique aux différentes équipes',
-          'Suivi de la performance des plateformes et mise en place d’indicateurs'
+          'Suivi de la performance des plateformes et mise en place d’indicateurs',
+          'Suivi du run de la chaine applicative'
         ]
       },
       {
         'libelle': 'Toolbox',
         'detail': [
           `Conception (recueil du besoin, architecture, développement) d\'une solution pour déployer facilement
-de l\'outillage de supervision dans le cadre du programme FIRST`,
+de l\'outillage de monitoring dans le cadre du programme FIRST`,
           'Leader technique auprès de l\'équipe de développement (2 développeurs)',
-          'Choix des plugins et des solutions techniques pour développer et déployer la Toolbox (choix des processus associés)'
+          `« Push to prod ». Mise en place d’une solution pour déployer automatiquement
+en production une fois le code terminé et validé`,
+          'Choix des plugins et des solutions techniques pour développer et déployer la Toolbox (choix des processus associés)',
+          'Migration de l\'application dans Amazon EKS'
         ]
       }
     ],
-    'environnement': `Agile, DevOps, Ansible, Ansible Tower, Smashing, Bootstrap, Jquery,
-Jenkins, Sonar, Nexus, Elasticsearch (ELK), Spring boot (Eureka, Spring
-config, Spring admin), Redis, Apache, Filebeat, Metricbeat, MongoDb,
-Docker, Rancher, Kubernetes`
+    'environnement': [
+      {
+        'label': 'Contexte',
+        'value': `Agile, DevOps`
+      },
+      {
+        'label': 'Build/Déploiement',
+        'value': `Ansible, Ansible Tower, Jenkins, Sonar, Nexus`
+      },
+      {
+        'label': 'Développement',
+        'value': `Smashing, Bootstrap, Jquery, Php, Redis, Dynamodb`
+      },
+      {
+        'label': 'Intégration',
+        'value': `Spring boot (Eureka, Spring config, Spring admin), Redis, Apache, MongoDb`
+      },
+      {
+        'label': 'Monitoring',
+        'value': `Elasticsearch (ELK), Filebeat, Metricbeat, Grafana, Hawtio`
+      },
+      {
+        'label': 'Exploitation',
+        'value': `Docker, Rancher, Kubernetes`
+      }
+    ]
   },
   {
     'dateStart': '11/2015',
@@ -108,9 +134,28 @@ Docker, Rancher, Kubernetes`
         ]
       }
     ],
-    'environnement': `Agile, DevOps, Debian, Ansible, Puppet, Haproxy, Apache, Liferay,
- Solr, Servicemix, Tomcat, Bonita, Postgres, Bind, Exim/Dovecot, Ossec,
- Jenkins, Sonar, Nexus, Zabbix, Graylog, Rainloop, Strongswan`
+    'environnement': [
+      {
+        'label': 'Pilotage',
+        'value': `Agile, DevOps`
+      },
+      {
+        'label': 'Build/Déploiement',
+        'value': `Ansible, Puppet, Jenkins, Sonar, Nexus, Rainloop`
+      },
+      {
+        'label': 'Intégration',
+        'value': `Debian, Haproxy, Apache, Liferay, Solr, Servicemix, Tomcat, Bonita, Postgres, Bind, Exim/Dovecot, Ossec`
+      },
+      {
+        'label': 'Monitoring',
+        'value': `Zabbix, Graylog`
+      },
+      {
+        'label': 'Exploitation',
+        'value': `glpi`
+      }
+    ]
   },
   {
     'dateStart': '09/2015',
@@ -128,7 +173,12 @@ Docker, Rancher, Kubernetes`
         ]
       }
     ],
-    'environnement': 'Centos, Jenkins, Clearcase, Php, Mysql, Solr'
+    'environnement': [
+      {
+        'label': 'Développement',
+        'value': `Centos, Jenkins, Clearcase, Php, Mysql, Solr`
+      }
+    ]
   },
   {
     'dateStart': '02/2009',
@@ -186,12 +236,25 @@ Docker, Rancher, Kubernetes`
       {
         'libelle': 'Industrialisation / Développement',
         'detail': [
-          'Suivi des activités et automatisation des tâches récurentes'
+          'Suivi des activités et automatisation des tâches récurrentes'
         ]
       }
     ],
-    'environnement': `ARS, Solaris, Weblogic, Jboss AS, Jboss EWP, ICAN, Oracle, Apache, Cognos, RTC,
- HP-ALM, Maven, PostgreSQL, IIS, MqSeries, MySQL, PHP, MongoDb, Docker`
+    'environnement': [
+      {
+        'label': 'Intégration',
+        'value': `Solaris, Weblogic, Jboss AS, Jboss EWP, ICAN, Oracle, Apache, Cognos, RTC,
+ HP-ALM, Maven, PostgreSQL, IIS, MqSeries, MongoDb, Docker`
+      },
+      {
+        'label': 'Développement',
+        'value': `Php, Mysql, shell`
+      },
+      {
+        'label': 'Exploitation',
+        'value': `ARS`
+      }
+    ]
   },
   {
     'dateStart': '01/2014',
@@ -208,7 +271,12 @@ Docker, Rancher, Kubernetes`
         ]
       }
     ],
-    'environnement': 'Word, VBA, HP ALM 11'
+    'environnement': [
+      {
+        'label': 'Développement',
+        'value': 'Word, VBA, HP ALM 11'
+      }
+    ]
   },
   {
     'dateStart': '10/2008',
@@ -226,7 +294,12 @@ Docker, Rancher, Kubernetes`
         ]
       }
     ],
-    'environnement': 'HTML, CSS, JavaScript, PHP, Ajax, Java, Struts'
+    'environnement': [
+      {
+        'label': 'Développement',
+        'value': 'HTML, CSS, JavaScript, PHP, Ajax, Java, Struts'
+      }
+    ]
   },
   {
     'dateStart': '02/2008',
@@ -246,7 +319,16 @@ Docker, Rancher, Kubernetes`
        ]
      }
    ],
-   'environnement': 'anglais, C++, wxWidgets, XML, cryptage, tcp-ip, base de données'
+    'environnement': [
+      {
+        'label': 'Langue',
+        'value': 'Anglais'
+      },
+      {
+        'label': 'Développement',
+        'value': 'C++, wxWidgets, XML, cryptage, tcp-ip, base de données'
+      }
+    ]
   }
 ];
 

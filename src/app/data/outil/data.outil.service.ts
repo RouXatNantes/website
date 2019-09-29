@@ -123,7 +123,7 @@ export class DataOutilService {
         'note': 2
       },
       {
-        'libelle': 'Solr',
+        'libelle': 'Dynamodb',
         'note': 1
       },
       {
